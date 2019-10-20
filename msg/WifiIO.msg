@@ -1,6 +1,5 @@
 Header header
-time unique
-string error_code
+char error_code
 string sender
 string purpose
 string author
