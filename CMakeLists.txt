@@ -61,7 +61,11 @@ add_message_files(
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
-  WifiSend.srv
+  Ask_Data.srv
+  Send_Task.srv
+  WifiNodeCost.srv
+  WifiNodeOcp.srv
+  WifiTaskConfirm.srv
 )
 
 ## Generate actions in the 'action' folder

@@ -1,0 +1,6 @@
+# WifiTaskConfirm.srv
+# topic of controller <- wifi: "robot_wifi_taskconfirm_inner"
+Cost task
+---
+char error_code
+bool is_taken

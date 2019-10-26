@@ -1,4 +1,3 @@
-Header header
 char error_code
 string sender
 string purpose

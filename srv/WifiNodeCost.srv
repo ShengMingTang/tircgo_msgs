@@ -1,0 +1,7 @@
+# WifiNodeCost.srv
+# topic of controller -> wifi: "robot_wifi_askcost_outer"
+# topic of controller <- wifi: "robot_wifi_askcost_inner"
+RouteNode target
+---
+char error_code
+float64 cost
