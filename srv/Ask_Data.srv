@@ -1,4 +1,4 @@
 Header header
 string purpose
 ---
-CtrlData SMData
+CtrlData ctrlData

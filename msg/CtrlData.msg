@@ -1,26 +1,30 @@
 # CtrlData.msg
+# Version tircgo_1107
+
 # mode the controller is in
 int16 mode
 
-# coordinate, not reliable, just a reference
-geometry_msgs/Quaternion coor
+# stage bitmap
+# stage = stage bitwire OR mode
+int16 stage_bm
 
-# only matters in working mode
+# vars set by UART
 int16 tracking_status
-
-# safety issue 
 int16[] lidar_levels
 
-# homing, training status
-bool is_origin_set
-bool is_calibed
-bool is_trained
-bool is_calib_begin
+
+# coordinate, not reliable, just a reference
+# set to 0 if calibration is triggered
+geometry_msgs/Quaternion coor
 
 # runtime info, "nd" means "RoutNode"
-RouteNode nd_training
 
-# the to-do list for a wokring-mode robot
-RouteNode nd_target
+## training
+RouteNode nd_training
+### can be direcly drawn by graphviz
+string graph
+
+## working
 RouteNode nd_ocp
+RouteNode nd_target
 RouteNode[] work_list
