@@ -1,8 +1,9 @@
 # WifiNodeOcp.srv
-# topic of controller -> wifi: "robot_wifi_asknode_outer"
-# topic of controller <- wifi: "robot_wifi_asknode_inner"
+# tircgo_1107
+# topic of controller -> wifi: "robot_wifi_nodeocp_outer"
+# topic of controller <- wifi: "robot_wifi_nodeocp_inner"
 
-# controller ask if q_nd is occupied
+# controller ask if q_rn is occupied
 # wifi ask if the current robot is on q_rn
 RouteNode q_rn
 ---
@@ -12,4 +13,4 @@ RouteNode q_rn
 bool is_ocp
 
 # error code represent status of this service call
-char error_code
+string error_code
