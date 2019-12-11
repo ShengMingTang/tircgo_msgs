@@ -56,6 +56,7 @@ add_message_files(
   Cost.msg
   CtrlData.msg
   WifiIO.msg
+  ControllerTalk.msg
 )
 
 ## Generate services in the 'srv' folder
