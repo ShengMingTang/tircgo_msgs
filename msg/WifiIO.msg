@@ -1,8 +1,15 @@
-char error_code
-string sender
+Header header
 string purpose
+string sender
+string sender_state
 string author
-uint16 hop_count
+string TASK_ID
+string error_code
 string[] signatures
+uint16 hop_count
 
-CtrlData ctrlData
+Cost cost
+RouteNode node
+CtrlData ctrldata
+
+ControllerTalk c_talk
