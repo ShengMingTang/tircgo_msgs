@@ -2,6 +2,7 @@
 # tircgo_1107
 # topic of controller <- wifi: "robot_wifi_taskconfirm_inner"
 Cost task
+RouteNode dest
 ---
 string error_code
 bool is_taken
